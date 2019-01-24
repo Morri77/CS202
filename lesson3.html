@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <title>Lesson 3 | Forms</title>
+  </head>
+  <body>
+    <!-- container (fixed margin) or container-fluid (100% of page has smaller margin) -->
+     <div class="container-fluid">
+      <h1>Forms</h1>
+      <form action="welcome.html" method="post" autocomplete="" onsubmit="">
+
+          <label for="name">Name</label><br>
+          <input type="text" name="name" id="n1" size="50" required><br>
+
+          <label for="password">Password</label><br>
+          <input type="password" name="password" id="pass" placeholder="Enter Your Password"><br>
+
+          <label for="phone">Phone</label><br>
+          <input type="text" name="phone" id="p"><br>
+
+          <label for="date">DOB</label><br>
+          <input type="date" name="date" id="dat"><br>
+
+          <label for="gender">Gender</label><br>
+          Male:<input type="radio" name="gender" id="g">
+          Female: <input type="radio" name="gender" id="g"><br>
+
+          <label for="image">Upload an Image</label><br>
+          <input type="file" name="image" id=""><br>
+
+          <label for="city">Select Your City</label><br>
+          <section>
+              <option value="">Bellingham</option>
+              <option value="">Seattle</option>
+              <option value="">Tacoma</option>
+          </section><br>
+
+          <label for="message">Message</label><br>
+          <textarea name="message" id="" cols="30" rows="6"></textarea><br>
+
+          <input class="btn btn-danger" type="submit" value="Send">
+      
+      </form>
+     </div>
+
+    <hr>
+    <h3>Audio</h3>
+    <audio controls autoplay loop muted>
+      <source src="media/audio.mp3" type="audio/mp3">
+    </audio>
+
+    <hr>
+
+    <h3>Video</h3>
+    <video controls autoplay loop plays-inline>
+      <source src="media/video.mp4" type="video/mp4">
+    </video>
+
+     <div style="margin-top:400px"></div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+/* selector & declaration */
+/* selector { propername:value;} */
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+/* css variables- root & var() */
+:root{
+    --main-color:pink;
+    --text-color:black;
+}
+p{
+    color: blue;
+}
+
+body{
+    
+    /* font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 150%;
+    font-family:Arial, Helvetica, sans-serif; */
+    
+    /* shorthand */
+    font:italic small-caps bold 13px/150% Nunito;
+    background-color: var(--main-color) !important;
+    
+}
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+p{
+    color: var(--text-color);
+}
