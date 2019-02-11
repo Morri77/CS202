@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lesson 5 | Page Layout</title>
-    <link rel="stylesheet" href="css/maina.css">
+    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 
 <body>
-    <header>
+    <div class="grid">
+    <header class="header">
         <div class="container">
-            <nav>
+            <nav class="nav">
                 <label for="toggle" class="label">
                     <i class="fas fa-bars"></i>
                 </label>
                 <input type="checkbox" class="icon" id="toggle">
               
                 <ul class="menu">
-                    <li><a href="lesson9.html">Home</a></li>
+                    <li><a href="quiz4.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="event.html">Events</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
@@ -34,8 +35,9 @@
     </header> <!-- End of Header -->
     <div class="banner"></div>
     <main>
-        <div class="container">
-            <div class="floatleft">
+         <div class="container"> 
+           
+            <div class="main1">
 
                 <h3>Welcome To Our Website</h3>
 
@@ -44,7 +46,7 @@
                     explicabo sunt? Veritatis, laborum possimus. Odio, quidem et! Perferendis ipsa totam quis. Labore
                     cumque consectetur sequi quia. Dignissimos ad rem consequuntur alias aliquid assumenda?</p>
             </div><!-- End of floatleft -->
-            <div class="floatright">
+            <div class="main2">
 
                 <h4>About Our School</h4>
 
@@ -63,7 +65,8 @@
                     <a href="read.html" class="button">Read More</a>
                 </p>
             </div><!-- End of floatright -->
-        </div>
+       
+        </div> 
     </main>
     <div class="clearfix"></div>
     <section class="section-color">
@@ -86,13 +89,14 @@
         </div>
     </section>
     <div class="clearfix"></div>
-    <footer>
-        <div class="container">
+    <footer class="footer">
+        <div class="container"> 
             <p>
                 Copyright &copy; 2019 Jenna Morrison
             </p>
-        </div>
+        </div> 
     </footer>
+</div>
 </body>
 
 </html>

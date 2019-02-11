@@ -18,33 +18,38 @@
 .color-2{
     background: var(--color-2);
 }
+
+
 .grid{
      display: grid; 
-    /* grid-template-columns: 30% 30% 40%; */
-    /* 1 or < collumn layout can use px or %*/
-    /* grid-template-rows: 300px; */ 
-    /* fraction unit - fr */
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+     grid-template-columns: 30% 30% 40%;  
+     grid-row-gap: 10px;
+     grid-column-gap: 10px;
+     /* 1 or < collumn layout can use px or % */
+    /* grid-template-rows: 300px;  */
+     /* fraction unit - fr  */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; 
 
-    /* grid-template-rows: 200px 80px; */
+     grid-template-rows: 200px 80px; 
 
-    /* gap */
-    /* grid-column-gap: 20px;
-    grid-row-gap: 20px; */
+     gap 
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; 
 
-    /* grid-gap: 20px; */
+     grid-gap: 20px;  */
 
-    /* repeat (same as doing 1fr 1fr 1fr 1fr) */
-/* 
-    grid-template-columns: repeat(3, 1fr); */
-/* start of new grid */
-    grid-template-columns: 1fr 2fr 1fr;
+     /* repeat (same as doing 1fr 1fr 1fr 1fr)  */
+
+    /* grid-template-columns: repeat(3, 1fr);  */
+ /* start of new grid  */
+     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 100px 100px 100px;
     grid-template-areas: 
     "head head head"
     "nav nav section"
     "main main section"
     "footer footer footer"
+    
    
 }
 
@@ -54,6 +59,9 @@
 }
 .nav{
     grid-area: nav;
+    justify-content: flex-start; 
+    color: white;
+
 }
 .section{
     grid-area: section;
@@ -62,5 +70,5 @@
     grid-area: main;
 }
 .footer{
-    grid-area: footer;
+    grid-area: footer; 
 }
