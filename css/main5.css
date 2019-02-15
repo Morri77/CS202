@@ -22,9 +22,8 @@
 
 .grid{
      display: grid; 
-     grid-template-columns: 30% 30% 40%;  
-     grid-row-gap: 10px;
-     grid-column-gap: 10px;
+     /* grid-template-columns: 1fr 1fr 1fr 3fr;  
+     grid-gap: 10px; */
      /* 1 or < collumn layout can use px or % */
     /* grid-template-rows: 300px;  */
      /* fraction unit - fr  */
@@ -42,26 +41,28 @@
 
     /* grid-template-columns: repeat(3, 1fr);  */
  /* start of new grid  */
-     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60% 20% 10% 10%; 
     grid-template-areas: 
     "head head head"
-    "nav nav section"
-    "main main section"
-    "footer footer footer"
+    "nav nav nav"
+    "section section section"
+    "main main main"
+    "footer footer footer" 
     
    
 }
 
-.header{
+ .header{
     grid-area: head;
-
+    font-size: 20px;
+    background: url(../images/banner.jpg);
+    
 }
 .nav{
-    grid-area: nav;
-    justify-content: flex-start; 
+    grid-area: nav; 
     color: white;
-
+    
 }
 .section{
     grid-area: section;
@@ -71,4 +72,4 @@
 }
 .footer{
     grid-area: footer; 
-}
+} 
